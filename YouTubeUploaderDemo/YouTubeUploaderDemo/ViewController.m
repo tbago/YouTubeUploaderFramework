@@ -38,9 +38,10 @@ static NSString *const kClientSecret    = @"rCcqhEdkZsOkQ4bEEqfM6i47";
     [self.youtubeUploader uploadYoutubeVideo:fileData
                                        title:@"Yuneec Breeze"
                                  description:@"A video from Yuneec Breeze"
+                                     process:^(float percent) { 
+                                     }
                                     complate:^(BOOL success, NSString *message) {
-                                        
-    }];
+                                    }];
 }
 
 #pragma mark - get & set

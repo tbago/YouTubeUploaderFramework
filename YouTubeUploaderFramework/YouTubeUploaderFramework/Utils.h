@@ -32,9 +32,6 @@
 static NSString *const DEFAULT_KEYWORD  = @"ytdl";
 static NSString *const UPLOAD_PLAYLIST  = @"Tbago";
 
-static NSString *const kClientID        = @"304715988357-8vuq0b89imqh0474ri4ceigpn7m145h6.apps.googleusercontent.com";
-static NSString *const kClientSecret    = @"rCcqhEdkZsOkQ4bEEqfM6i47";
-
 static NSString *const kKeychainItemName = @"YouTube Uploader";
 
 @interface Utils : NSObject

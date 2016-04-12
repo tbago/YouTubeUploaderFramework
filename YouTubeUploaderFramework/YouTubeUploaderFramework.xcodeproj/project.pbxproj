@@ -17,8 +17,6 @@
 		D07500131CBC990800B07E2C /* YouTubeDirectTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D075000B1CBC990800B07E2C /* YouTubeDirectTag.m */; };
 		D07500141CBC990800B07E2C /* YouTubeGetUploads.h in Headers */ = {isa = PBXBuildFile; fileRef = D075000C1CBC990800B07E2C /* YouTubeGetUploads.h */; };
 		D07500151CBC990800B07E2C /* YouTubeGetUploads.m in Sources */ = {isa = PBXBuildFile; fileRef = D075000D1CBC990800B07E2C /* YouTubeGetUploads.m */; };
-		D07500161CBC990800B07E2C /* YouTubeUploadVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = D075000E1CBC990800B07E2C /* YouTubeUploadVideo.h */; };
-		D07500171CBC990800B07E2C /* YouTubeUploadVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = D075000F1CBC990800B07E2C /* YouTubeUploadVideo.m */; };
 		D075001B1CBC992400B07E2C /* GTLCommon_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = D07500191CBC992400B07E2C /* GTLCommon_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D075001C1CBC992400B07E2C /* GTLNetworking_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = D075001A1CBC992400B07E2C /* GTLNetworking_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D075001F1CBC993D00B07E2C /* GTLYouTube_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = D075001E1CBC993D00B07E2C /* GTLYouTube_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
@@ -37,8 +35,6 @@
 		D075000B1CBC990800B07E2C /* YouTubeDirectTag.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeDirectTag.m; sourceTree = "<group>"; };
 		D075000C1CBC990800B07E2C /* YouTubeGetUploads.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeGetUploads.h; sourceTree = "<group>"; };
 		D075000D1CBC990800B07E2C /* YouTubeGetUploads.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeGetUploads.m; sourceTree = "<group>"; };
-		D075000E1CBC990800B07E2C /* YouTubeUploadVideo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeUploadVideo.h; sourceTree = "<group>"; };
-		D075000F1CBC990800B07E2C /* YouTubeUploadVideo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeUploadVideo.m; sourceTree = "<group>"; };
 		D07500191CBC992400B07E2C /* GTLCommon_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLCommon_Sources.m; sourceTree = "<group>"; };
 		D075001A1CBC992400B07E2C /* GTLNetworking_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLNetworking_Sources.m; sourceTree = "<group>"; };
 		D075001E1CBC993D00B07E2C /* GTLYouTube_Sources.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTLYouTube_Sources.m; sourceTree = "<group>"; };
@@ -70,8 +66,6 @@
 				D075000B1CBC990800B07E2C /* YouTubeDirectTag.m */,
 				D075000C1CBC990800B07E2C /* YouTubeGetUploads.h */,
 				D075000D1CBC990800B07E2C /* YouTubeGetUploads.m */,
-				D075000E1CBC990800B07E2C /* YouTubeUploadVideo.h */,
-				D075000F1CBC990800B07E2C /* YouTubeUploadVideo.m */,
 			);
 			path = YouTubeAPIProtocols;
 			sourceTree = "<group>";
@@ -159,7 +153,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D08EC5A21CBC9EA6005BE696 /* YouTubeUploader.h in Headers */,
-				D07500161CBC990800B07E2C /* YouTubeUploadVideo.h in Headers */,
 				D07500031CBC98F800B07E2C /* Utils.h in Headers */,
 				D07500101CBC990800B07E2C /* UploadController.h in Headers */,
 				D07500121CBC990800B07E2C /* YouTubeDirectTag.h in Headers */,
@@ -236,7 +229,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D07500171CBC990800B07E2C /* YouTubeUploadVideo.m in Sources */,
 				D07500111CBC990800B07E2C /* UploadController.m in Sources */,
 				D075001B1CBC992400B07E2C /* GTLCommon_Sources.m in Sources */,
 				D07500131CBC990800B07E2C /* YouTubeDirectTag.m in Sources */,

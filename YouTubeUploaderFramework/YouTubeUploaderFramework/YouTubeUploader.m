@@ -11,14 +11,17 @@
 #import "GTMOAuth2ViewControllerTouch.h"
 
 #import "Utils.h"
-#import "YouTubeUploadVideo.h"
+#import "UploadController.h"
+
+typedef void (^UploadVideoComplate)(BOOL success, NSString *message);
 
 @interface YouTubeUploader()
 @property (strong, nonatomic) NSString                  *clientID;
 @property (strong, nonatomic) NSString                  *clientSecret;
 
 @property (strong, nonatomic) GTLServiceYouTube         *youtubeService;
-@property(nonatomic, strong) YouTubeUploadVideo         *uploadVideo;
+
+@property (copy, nonatomic) UploadVideoComplate         uploadVideoComplate;
 @end
 
 @implementation YouTubeUploader
@@ -32,8 +35,8 @@
         self.clientSecret = clientSecret;
         self.youtubeService.authorizer =
         [GTMOAuth2ViewControllerTouch authForGoogleFromKeychainForName:kKeychainItemName
-                                                              clientID:kClientID
-                                                          clientSecret:kClientSecret];
+                                                              clientID:self.clientID
+                                                          clientSecret:self.clientSecret];
     }
     return self;
 }
@@ -57,19 +60,50 @@
 - (void)uploadYoutubeVideo:(NSData *) fileData
                      title:(NSString *) title
                description:(NSString *) description
+                   process:(void(^)(float percent)) porcess
                   complate:(void(^)(BOOL success, NSString *message)) complate {
-    
-    [self.uploadVideo uploadYouTubeVideoWithService:self.youtubeService
-                                           fileData:fileData
-                                              title:title
-                                        description:description];
+    self.uploadVideoComplate = complate;
+    self.youtubeService.uploadProgressBlock = ^(GTLServiceTicket *ticket,
+                                                unsigned long long totalBytesUploaded,
+                                                unsigned long long totalBytesExpectedToUpload) {
+        porcess(totalBytesUploaded*1.0/totalBytesExpectedToUpload);
+    };
+    [self uploadYouTubeVideoWithService:self.youtubeService
+                               fileData:fileData
+                                  title:title
+                            description:description];
 }
 
 #pragma mark - uploadYouTubeVideo
 
-- (void)uploadYouTubeVideo:(YouTubeUploadVideo *)uploadVideo
-      didFinishWithResults:(GTLYouTubeVideo *)video {
-    [Utils showAlert:@"Video Uploaded" message:video.identifier];
+- (void)uploadYouTubeVideoWithService:(GTLServiceYouTube *)service
+                             fileData:(NSData*)fileData
+                                title:(NSString *)title
+                          description:(NSString *)description {
+    
+    GTLYouTubeVideo *video = [GTLYouTubeVideo object];
+    GTLYouTubeVideoSnippet *snippet = [GTLYouTubeVideoSnippet alloc];
+    GTLYouTubeVideoStatus *status = [GTLYouTubeVideoStatus alloc];
+    status.privacyStatus = @"public";
+    snippet.title = title;
+    snippet.descriptionProperty = description;
+    snippet.tags = [NSArray arrayWithObjects:DEFAULT_KEYWORD, [UploadController generateKeywordFromPlaylistId:UPLOAD_PLAYLIST], nil];
+    video.snippet = snippet;
+    video.status = status;
+    
+    GTLUploadParameters *uploadParameters = [GTLUploadParameters uploadParametersWithData:fileData MIMEType:@"video/*"];
+    GTLQueryYouTube *query = [GTLQueryYouTube queryForVideosInsertWithObject:video part:@"snippet,status" uploadParameters:uploadParameters];
+    
+    [service executeQuery:query
+        completionHandler:^(GTLServiceTicket *ticket, GTLYouTubeVideo *insertedVideo, NSError *error) {
+            if (error == nil) {
+                self.uploadVideoComplate(YES, insertedVideo.identifier);
+            }
+            else {
+//                NSLog(@"An error occurred: %@", error);
+                self.uploadVideoComplate(NO, @"An error occurred!");
+            }
+        }];
 }
 
 #pragma mark - private method
@@ -79,7 +113,7 @@
       finishedWithAuth:(GTMOAuth2Authentication *)authResult
                  error:(NSError *)error {
     if (error != nil) {
-        [Utils showAlert:@"Authentication Error" message:error.localizedDescription];
+//        [Utils showAlert:@"Authentication Error" message:error.localizedDescription];
         self.youtubeService.authorizer = nil;
     } else {
         self.youtubeService.authorizer = authResult;
@@ -95,10 +129,4 @@
     return _youtubeService;
 }
 
-- (YouTubeUploadVideo *)uploadVideo {
-    if (_uploadVideo == nil) {
-        _uploadVideo = [[YouTubeUploadVideo alloc] init];
-    }
-    return _uploadVideo;
-}
 @end
