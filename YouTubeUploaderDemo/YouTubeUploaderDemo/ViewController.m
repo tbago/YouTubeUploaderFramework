@@ -36,8 +36,8 @@ static NSString *const kClientSecret    = @"rCcqhEdkZsOkQ4bEEqfM6i47";
     NSURL *videoFileURL = [NSURL fileURLWithPath:videoFilePath];//Convert the NSString To NSURL
     NSData *fileData = [NSData dataWithContentsOfURL:videoFileURL];
     [self.youtubeUploader uploadYoutubeVideo:fileData
-                                       title:@"Yuneec Breeze"
-                                 description:@"A video from Yuneec Breeze"
+                                       title:@"Test video"
+                                 description:@"A video for youtube test"
                                      process:^(float percent) { 
                                      }
                                     complate:^(BOOL success, NSString *message) {
