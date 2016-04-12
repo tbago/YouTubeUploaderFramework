@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D08EC5A51CBCA348005BE696 /* YouTubeUploaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D075FFFE1CBC98C400B07E2C /* YouTubeUploaderFramework.framework */; };
 		D090079E1CBC9710000A5A10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D090079D1CBC9710000A5A10 /* main.m */; };
 		D09007A11CBC9710000A5A10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09007A01CBC9710000A5A10 /* AppDelegate.m */; };
 		D09007A41CBC9710000A5A10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09007A31CBC9710000A5A10 /* ViewController.m */; };
@@ -44,6 +45,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08EC5A51CBCA348005BE696 /* YouTubeUploaderFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
