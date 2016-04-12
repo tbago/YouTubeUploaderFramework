@@ -14,14 +14,14 @@
 		D07500101CBC990800B07E2C /* UploadController.h in Headers */ = {isa = PBXBuildFile; fileRef = D07500081CBC990800B07E2C /* UploadController.h */; };
 		D07500111CBC990800B07E2C /* UploadController.m in Sources */ = {isa = PBXBuildFile; fileRef = D07500091CBC990800B07E2C /* UploadController.m */; };
 		D07500121CBC990800B07E2C /* YouTubeDirectTag.h in Headers */ = {isa = PBXBuildFile; fileRef = D075000A1CBC990800B07E2C /* YouTubeDirectTag.h */; };
-		D07500131CBC990800B07E2C /* YouTubeDirectTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D075000B1CBC990800B07E2C /* YouTubeDirectTag.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		D07500131CBC990800B07E2C /* YouTubeDirectTag.m in Sources */ = {isa = PBXBuildFile; fileRef = D075000B1CBC990800B07E2C /* YouTubeDirectTag.m */; };
 		D07500141CBC990800B07E2C /* YouTubeGetUploads.h in Headers */ = {isa = PBXBuildFile; fileRef = D075000C1CBC990800B07E2C /* YouTubeGetUploads.h */; };
 		D07500151CBC990800B07E2C /* YouTubeGetUploads.m in Sources */ = {isa = PBXBuildFile; fileRef = D075000D1CBC990800B07E2C /* YouTubeGetUploads.m */; };
 		D07500161CBC990800B07E2C /* YouTubeUploadVideo.h in Headers */ = {isa = PBXBuildFile; fileRef = D075000E1CBC990800B07E2C /* YouTubeUploadVideo.h */; };
 		D07500171CBC990800B07E2C /* YouTubeUploadVideo.m in Sources */ = {isa = PBXBuildFile; fileRef = D075000F1CBC990800B07E2C /* YouTubeUploadVideo.m */; };
 		D075001B1CBC992400B07E2C /* GTLCommon_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = D07500191CBC992400B07E2C /* GTLCommon_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D075001C1CBC992400B07E2C /* GTLNetworking_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = D075001A1CBC992400B07E2C /* GTLNetworking_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
-		D075001F1CBC993D00B07E2C /* GTLYouTube_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = D075001E1CBC993D00B07E2C /* GTLYouTube_Sources.m */; };
+		D075001F1CBC993D00B07E2C /* GTLYouTube_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = D075001E1CBC993D00B07E2C /* GTLYouTube_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D075FFF21CBC974600B07E2C /* YouTubeUploaderFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D075FFF11CBC974600B07E2C /* YouTubeUploaderFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -115,10 +115,18 @@
 				D07500001CBC98F800B07E2C /* Utils.m */,
 				D07500011CBC98F800B07E2C /* VideoData.h */,
 				D07500021CBC98F800B07E2C /* VideoData.m */,
+				D08EC59E1CBC9D38005BE696 /* Supporting Files */,
+			);
+			path = YouTubeUploaderFramework;
+			sourceTree = "<group>";
+		};
+		D08EC59E1CBC9D38005BE696 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
 				D075FFF11CBC974600B07E2C /* YouTubeUploaderFramework.h */,
 				D075FFF31CBC974600B07E2C /* Info.plist */,
 			);
-			path = YouTubeUploaderFramework;
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -317,6 +325,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					./GoogleAPI,
+					./GoogleAPI/YouTube,
+					./GoogleAPI/Objects,
+					./GoogleAPI/Utilities,
+					./GoogleAPI/HTTPFetcher,
+					./GoogleAPI/OAuth2,
+					./GoogleAPI/OAuth2/Touch,
+				);
 				INFOPLIST_FILE = YouTubeUploaderFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
@@ -333,6 +350,15 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				HEADER_SEARCH_PATHS = (
+					./GoogleAPI,
+					./GoogleAPI/YouTube,
+					./GoogleAPI/Objects,
+					./GoogleAPI/Utilities,
+					./GoogleAPI/HTTPFetcher,
+					./GoogleAPI/OAuth2,
+					./GoogleAPI/OAuth2/Touch,
+				);
 				INFOPLIST_FILE = YouTubeUploaderFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
