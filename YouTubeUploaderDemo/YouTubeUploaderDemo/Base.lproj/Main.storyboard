@@ -16,7 +16,20 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PRy-xZ-nk9">
+                                <rect key="frame" x="275" y="285" width="50" height="30"/>
+                                <state key="normal" title="Upload"/>
+                                <connections>
+                                    <action selector="uploadButtonClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="PbO-1j-p47"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="PRy-xZ-nk9" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="htv-dx-PeW"/>
+                            <constraint firstItem="PRy-xZ-nk9" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="t5Y-nD-Kl7"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="YYe-Yz-NRc"/>
                 </viewController>

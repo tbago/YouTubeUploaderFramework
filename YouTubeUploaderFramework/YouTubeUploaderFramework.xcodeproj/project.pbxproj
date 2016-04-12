@@ -24,7 +24,6 @@
 		D075001F1CBC993D00B07E2C /* GTLYouTube_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = D075001E1CBC993D00B07E2C /* GTLYouTube_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D075FFF21CBC974600B07E2C /* YouTubeUploaderFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D075FFF11CBC974600B07E2C /* YouTubeUploaderFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D08EC5A21CBC9EA6005BE696 /* YouTubeUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = D08EC5A01CBC9EA6005BE696 /* YouTubeUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D08EC5A91CBCA435005BE696 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08EC5A81CBCA435005BE696 /* GTMOAuth2ViewTouch.xib */; };
 		D08EC5AB1CBCA639005BE696 /* YouTubeUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EC5AA1CBCA639005BE696 /* YouTubeUploader.m */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		D075FFF31CBC974600B07E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D075FFFF1CBC98F800B07E2C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		D08EC5A01CBC9EA6005BE696 /* YouTubeUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeUploader.h; sourceTree = "<group>"; };
-		D08EC5A81CBCA435005BE696 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = OAuth2/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
 		D08EC5AA1CBCA639005BE696 /* YouTubeUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeUploader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -149,7 +147,6 @@
 		D08EC5A71CBCA421005BE696 /* Touch */ = {
 			isa = PBXGroup;
 			children = (
-				D08EC5A81CBCA435005BE696 /* GTMOAuth2ViewTouch.xib */,
 			);
 			name = Touch;
 			sourceTree = "<group>";
@@ -229,7 +226,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D08EC5A91CBCA435005BE696 /* GTMOAuth2ViewTouch.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

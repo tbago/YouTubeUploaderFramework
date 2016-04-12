@@ -18,4 +18,8 @@
 
 - (UIViewController *)createAuthViewController;
 
+- (void)uploadYoutubeVideo:(NSData *) fileData
+                     title:(NSString *) title
+               description:(NSString *) description
+                  complate:(void(^)(BOOL success, NSString *message)) complate;
 @end

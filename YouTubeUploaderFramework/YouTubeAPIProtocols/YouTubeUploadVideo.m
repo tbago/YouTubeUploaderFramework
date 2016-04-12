@@ -11,9 +11,6 @@
 #import "UploadController.h"
 #import "Utils.h"
 
-// Thumbnail image size.
-static const CGFloat kCropDimension = 44;
-
 @implementation YouTubeUploadVideo
 
 
@@ -38,8 +35,7 @@ static const CGFloat kCropDimension = 44;
     UIAlertView *waitIndicator = [Utils showWaitIndicator:@"Uploading to YouTube"];
     
     [service executeQuery:query
-                completionHandler:^(GTLServiceTicket *ticket,
-                                    GTLYouTubeVideo *insertedVideo, NSError *error) {
+        completionHandler:^(GTLServiceTicket *ticket, GTLYouTubeVideo *insertedVideo, NSError *error) {
                     [waitIndicator dismissWithClickedButtonIndex:0 animated:YES];
                     if (error == nil)
                     {

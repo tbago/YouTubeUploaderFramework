@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		D08EC5A51CBCA348005BE696 /* YouTubeUploaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D075FFFE1CBC98C400B07E2C /* YouTubeUploaderFramework.framework */; };
+		D08EC5AD1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08EC5AC1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib */; };
+		D08EC5B21CBCC45B005BE696 /* FCA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D08EC5B11CBCC454005BE696 /* FCA.mp4 */; };
 		D090079E1CBC9710000A5A10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D090079D1CBC9710000A5A10 /* main.m */; };
 		D09007A11CBC9710000A5A10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09007A01CBC9710000A5A10 /* AppDelegate.m */; };
 		D09007A41CBC9710000A5A10 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D09007A31CBC9710000A5A10 /* ViewController.m */; };
@@ -28,6 +30,8 @@
 
 /* Begin PBXFileReference section */
 		D075FFF91CBC98C400B07E2C /* YouTubeUploaderFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubeUploaderFramework.xcodeproj; path = ../YouTubeUploaderFramework/YouTubeUploaderFramework.xcodeproj; sourceTree = "<group>"; };
+		D08EC5AC1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = ../../YouTubeUploaderFramework/GoogleAPI/OAuth2/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		D08EC5B11CBCC454005BE696 /* FCA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FCA.mp4; sourceTree = "<group>"; };
 		D09007991CBC9710000A5A10 /* YouTubeUploaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeUploaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D090079D1CBC9710000A5A10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D090079F1CBC9710000A5A10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -80,6 +84,7 @@
 		D090079B1CBC9710000A5A10 /* YouTubeUploaderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D08EC5AC1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib */,
 				D090079F1CBC9710000A5A10 /* AppDelegate.h */,
 				D09007A01CBC9710000A5A10 /* AppDelegate.m */,
 				D09007A21CBC9710000A5A10 /* ViewController.h */,
@@ -87,6 +92,7 @@
 				D09007A51CBC9710000A5A10 /* Main.storyboard */,
 				D09007A81CBC9710000A5A10 /* Assets.xcassets */,
 				D09007AA1CBC9710000A5A10 /* LaunchScreen.storyboard */,
+				D08EC5B11CBCC454005BE696 /* FCA.mp4 */,
 				D09007AD1CBC9710000A5A10 /* Info.plist */,
 				D090079C1CBC9710000A5A10 /* Supporting Files */,
 			);
@@ -174,6 +180,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D08EC5B21CBCC45B005BE696 /* FCA.mp4 in Resources */,
+				D08EC5AD1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib in Resources */,
 				D09007AC1CBC9710000A5A10 /* LaunchScreen.storyboard in Resources */,
 				D09007A91CBC9710000A5A10 /* Assets.xcassets in Resources */,
 				D09007A71CBC9710000A5A10 /* Main.storyboard in Resources */,

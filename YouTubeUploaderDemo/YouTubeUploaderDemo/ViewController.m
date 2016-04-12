@@ -28,11 +28,20 @@ static NSString *const kClientSecret    = @"rCcqhEdkZsOkQ4bEEqfM6i47";
     }
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
+#pragma mark - action
 
+- (IBAction)uploadButtonClick:(UIButton *)sender {
+    NSString *videoFilePath = [[NSBundle mainBundle] pathForResource: @"FCA"
+                                                              ofType: @"mp4"];//Get the Video from Bundle
+    NSURL *videoFileURL = [NSURL fileURLWithPath:videoFilePath];//Convert the NSString To NSURL
+    NSData *fileData = [NSData dataWithContentsOfURL:videoFileURL];
+    [self.youtubeUploader uploadYoutubeVideo:fileData
+                                       title:@"Yuneec Breeze"
+                                 description:@"A video from Yuneec Breeze"
+                                    complate:^(BOOL success, NSString *message) {
+                                        
+    }];
+}
 
 #pragma mark - get & set
 
