@@ -15,7 +15,18 @@
 		D09007AC1CBC9710000A5A10 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D09007AA1CBC9710000A5A10 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		D075FFFD1CBC98C400B07E2C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D075FFF91CBC98C400B07E2C /* YouTubeUploaderFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D075FFEE1CBC974600B07E2C;
+			remoteInfo = YouTubeUploaderFramework;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		D075FFF91CBC98C400B07E2C /* YouTubeUploaderFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubeUploaderFramework.xcodeproj; path = ../YouTubeUploaderFramework/YouTubeUploaderFramework.xcodeproj; sourceTree = "<group>"; };
 		D09007991CBC9710000A5A10 /* YouTubeUploaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeUploaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D090079D1CBC9710000A5A10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		D090079F1CBC9710000A5A10 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -39,9 +50,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D075FFFA1CBC98C400B07E2C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D075FFFE1CBC98C400B07E2C /* YouTubeUploaderFramework.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		D09007901CBC9710000A5A10 = {
 			isa = PBXGroup;
 			children = (
+				D075FFF91CBC98C400B07E2C /* YouTubeUploaderFramework.xcodeproj */,
 				D090079B1CBC9710000A5A10 /* YouTubeUploaderDemo */,
 				D090079A1CBC9710000A5A10 /* Products */,
 			);
@@ -124,12 +144,28 @@
 			mainGroup = D09007901CBC9710000A5A10;
 			productRefGroup = D090079A1CBC9710000A5A10 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = D075FFFA1CBC98C400B07E2C /* Products */;
+					ProjectRef = D075FFF91CBC98C400B07E2C /* YouTubeUploaderFramework.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				D09007981CBC9710000A5A10 /* YouTubeUploaderDemo */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		D075FFFE1CBC98C400B07E2C /* YouTubeUploaderFramework.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YouTubeUploaderFramework.framework;
+			remoteRef = D075FFFD1CBC98C400B07E2C /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		D09007971CBC9710000A5A10 /* Resources */ = {
@@ -302,6 +338,7 @@
 				D09007B21CBC9710000A5A10 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
