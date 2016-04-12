@@ -24,8 +24,8 @@
 		D075001F1CBC993D00B07E2C /* GTLYouTube_Sources.m in Sources */ = {isa = PBXBuildFile; fileRef = D075001E1CBC993D00B07E2C /* GTLYouTube_Sources.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
 		D075FFF21CBC974600B07E2C /* YouTubeUploaderFramework.h in Headers */ = {isa = PBXBuildFile; fileRef = D075FFF11CBC974600B07E2C /* YouTubeUploaderFramework.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		D08EC5A21CBC9EA6005BE696 /* YouTubeUploader.h in Headers */ = {isa = PBXBuildFile; fileRef = D08EC5A01CBC9EA6005BE696 /* YouTubeUploader.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		D08EC5A31CBC9EA6005BE696 /* YouTubeUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EC5A11CBC9EA6005BE696 /* YouTubeUploader.m */; };
 		D08EC5A91CBCA435005BE696 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08EC5A81CBCA435005BE696 /* GTMOAuth2ViewTouch.xib */; };
+		D08EC5AB1CBCA639005BE696 /* YouTubeUploader.m in Sources */ = {isa = PBXBuildFile; fileRef = D08EC5AA1CBCA639005BE696 /* YouTubeUploader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,8 +48,8 @@
 		D075FFF31CBC974600B07E2C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D075FFFF1CBC98F800B07E2C /* Utils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Utils.h; sourceTree = "<group>"; };
 		D08EC5A01CBC9EA6005BE696 /* YouTubeUploader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YouTubeUploader.h; sourceTree = "<group>"; };
-		D08EC5A11CBC9EA6005BE696 /* YouTubeUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeUploader.m; sourceTree = "<group>"; };
 		D08EC5A81CBCA435005BE696 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = OAuth2/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		D08EC5AA1CBCA639005BE696 /* YouTubeUploader.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YouTubeUploader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +123,7 @@
 				D07500011CBC98F800B07E2C /* VideoData.h */,
 				D07500021CBC98F800B07E2C /* VideoData.m */,
 				D08EC5A01CBC9EA6005BE696 /* YouTubeUploader.h */,
-				D08EC5A11CBC9EA6005BE696 /* YouTubeUploader.m */,
+				D08EC5AA1CBCA639005BE696 /* YouTubeUploader.m */,
 				D08EC59E1CBC9D38005BE696 /* Supporting Files */,
 			);
 			path = YouTubeUploaderFramework;
@@ -247,7 +247,7 @@
 				D075001C1CBC992400B07E2C /* GTLNetworking_Sources.m in Sources */,
 				D075001F1CBC993D00B07E2C /* GTLYouTube_Sources.m in Sources */,
 				D07500041CBC98F800B07E2C /* Utils.m in Sources */,
-				D08EC5A31CBC9EA6005BE696 /* YouTubeUploader.m in Sources */,
+				D08EC5AB1CBCA639005BE696 /* YouTubeUploader.m in Sources */,
 				D07500151CBC990800B07E2C /* YouTubeGetUploads.m in Sources */,
 				D07500061CBC98F800B07E2C /* VideoData.m in Sources */,
 			);
