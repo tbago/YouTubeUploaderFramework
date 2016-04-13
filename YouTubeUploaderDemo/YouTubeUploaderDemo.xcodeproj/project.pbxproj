@@ -7,8 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		D08EC5A51CBCA348005BE696 /* YouTubeUploaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D075FFFE1CBC98C400B07E2C /* YouTubeUploaderFramework.framework */; };
-		D08EC5AD1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = D08EC5AC1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib */; };
+		D06C97941CBDD9CB003DE31D /* YouTubeUploaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06C97911CBDD9AF003DE31D /* YouTubeUploaderFramework.framework */; };
 		D08EC5B41CBCCC44005BE696 /* FCA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D08EC5B31CBCCC35005BE696 /* FCA.mp4 */; };
 		D090079E1CBC9710000A5A10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D090079D1CBC9710000A5A10 /* main.m */; };
 		D09007A11CBC9710000A5A10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09007A01CBC9710000A5A10 /* AppDelegate.m */; };
@@ -19,18 +18,24 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		D075FFFD1CBC98C400B07E2C /* PBXContainerItemProxy */ = {
+		D06C97901CBDD9AF003DE31D /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = D075FFF91CBC98C400B07E2C /* YouTubeUploaderFramework.xcodeproj */;
+			containerPortal = D06C978B1CBDD9AE003DE31D /* YouTubeUploaderFramework.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = D075FFEE1CBC974600B07E2C;
 			remoteInfo = YouTubeUploaderFramework;
 		};
+		D06C97921CBDD9AF003DE31D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06C978B1CBDD9AE003DE31D /* YouTubeUploaderFramework.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D06C97711CBDD442003DE31D;
+			remoteInfo = GTMOAuth2View;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		D075FFF91CBC98C400B07E2C /* YouTubeUploaderFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubeUploaderFramework.xcodeproj; path = ../YouTubeUploaderFramework/YouTubeUploaderFramework.xcodeproj; sourceTree = "<group>"; };
-		D08EC5AC1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = ../../YouTubeUploaderFramework/GoogleAPI/OAuth2/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		D06C978B1CBDD9AE003DE31D /* YouTubeUploaderFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubeUploaderFramework.xcodeproj; path = ../YouTubeUploaderFramework/YouTubeUploaderFramework.xcodeproj; sourceTree = "<group>"; };
 		D08EC5B31CBCCC35005BE696 /* FCA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FCA.mp4; sourceTree = "<group>"; };
 		D09007991CBC9710000A5A10 /* YouTubeUploaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeUploaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D090079D1CBC9710000A5A10 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -49,17 +54,18 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D08EC5A51CBCA348005BE696 /* YouTubeUploaderFramework.framework in Frameworks */,
+				D06C97941CBDD9CB003DE31D /* YouTubeUploaderFramework.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		D075FFFA1CBC98C400B07E2C /* Products */ = {
+		D06C978C1CBDD9AE003DE31D /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				D075FFFE1CBC98C400B07E2C /* YouTubeUploaderFramework.framework */,
+				D06C97911CBDD9AF003DE31D /* YouTubeUploaderFramework.framework */,
+				D06C97931CBDD9AF003DE31D /* GTMOAuth2View.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -67,7 +73,7 @@
 		D09007901CBC9710000A5A10 = {
 			isa = PBXGroup;
 			children = (
-				D075FFF91CBC98C400B07E2C /* YouTubeUploaderFramework.xcodeproj */,
+				D06C978B1CBDD9AE003DE31D /* YouTubeUploaderFramework.xcodeproj */,
 				D090079B1CBC9710000A5A10 /* YouTubeUploaderDemo */,
 				D090079A1CBC9710000A5A10 /* Products */,
 			);
@@ -84,7 +90,6 @@
 		D090079B1CBC9710000A5A10 /* YouTubeUploaderDemo */ = {
 			isa = PBXGroup;
 			children = (
-				D08EC5AC1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib */,
 				D090079F1CBC9710000A5A10 /* AppDelegate.h */,
 				D09007A01CBC9710000A5A10 /* AppDelegate.m */,
 				D09007A21CBC9710000A5A10 /* ViewController.h */,
@@ -154,8 +159,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = D075FFFA1CBC98C400B07E2C /* Products */;
-					ProjectRef = D075FFF91CBC98C400B07E2C /* YouTubeUploaderFramework.xcodeproj */;
+					ProductGroup = D06C978C1CBDD9AE003DE31D /* Products */;
+					ProjectRef = D06C978B1CBDD9AE003DE31D /* YouTubeUploaderFramework.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -166,11 +171,18 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		D075FFFE1CBC98C400B07E2C /* YouTubeUploaderFramework.framework */ = {
+		D06C97911CBDD9AF003DE31D /* YouTubeUploaderFramework.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = YouTubeUploaderFramework.framework;
-			remoteRef = D075FFFD1CBC98C400B07E2C /* PBXContainerItemProxy */;
+			remoteRef = D06C97901CBDD9AF003DE31D /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		D06C97931CBDD9AF003DE31D /* GTMOAuth2View.bundle */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = GTMOAuth2View.bundle;
+			remoteRef = D06C97921CBDD9AF003DE31D /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -181,7 +193,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D08EC5B41CBCCC44005BE696 /* FCA.mp4 in Resources */,
-				D08EC5AD1CBCA743005BE696 /* GTMOAuth2ViewTouch.xib in Resources */,
 				D09007AC1CBC9710000A5A10 /* LaunchScreen.storyboard in Resources */,
 				D09007A91CBC9710000A5A10 /* Assets.xcassets in Resources */,
 				D09007A71CBC9710000A5A10 /* Main.storyboard in Resources */,
@@ -311,6 +322,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					./GoogleAPI,
 					./GoogleAPI/HTTPFetcher,
@@ -331,6 +346,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				HEADER_SEARCH_PATHS = (
 					./GoogleAPI,
 					./GoogleAPI/HTTPFetcher,

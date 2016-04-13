@@ -252,7 +252,9 @@ static GTMOAuth2Keychain* gGTMOAuth2DefaultKeychain = nil;
 
 + (NSBundle *)authNibBundle {
   // subclasses may override this to specify a custom nib bundle
-  return nil;
+    NSString *resourceBundlePath = [[NSBundle mainBundle] pathForResource:@"GTMOAuth2View" ofType:@"bundle"];
+    NSBundle *resourceBundle = [NSBundle bundleWithPath:resourceBundlePath];
+    return resourceBundle;
 }
 
 #if !GTM_OAUTH2_SKIP_GOOGLE_SUPPORT

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D06C97771CBDD449003DE31D /* GTMOAuth2ViewTouch.xib in Resources */ = {isa = PBXBuildFile; fileRef = D06C976A1CBDD19C003DE31D /* GTMOAuth2ViewTouch.xib */; };
 		D07500031CBC98F800B07E2C /* Utils.h in Headers */ = {isa = PBXBuildFile; fileRef = D075FFFF1CBC98F800B07E2C /* Utils.h */; };
 		D07500041CBC98F800B07E2C /* Utils.m in Sources */ = {isa = PBXBuildFile; fileRef = D07500001CBC98F800B07E2C /* Utils.m */; };
 		D07500051CBC98F800B07E2C /* VideoData.h in Headers */ = {isa = PBXBuildFile; fileRef = D07500011CBC98F800B07E2C /* VideoData.h */; };
@@ -26,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D06C976A1CBDD19C003DE31D /* GTMOAuth2ViewTouch.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = GTMOAuth2ViewTouch.xib; path = OAuth2/Touch/GTMOAuth2ViewTouch.xib; sourceTree = "<group>"; };
+		D06C97711CBDD442003DE31D /* GTMOAuth2View.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GTMOAuth2View.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		D07500001CBC98F800B07E2C /* Utils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Utils.m; sourceTree = "<group>"; };
 		D07500011CBC98F800B07E2C /* VideoData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoData.h; sourceTree = "<group>"; };
 		D07500021CBC98F800B07E2C /* VideoData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoData.m; sourceTree = "<group>"; };
@@ -47,6 +50,13 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		D06C976E1CBDD442003DE31D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D075FFEA1CBC974600B07E2C /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -57,6 +67,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D06C97721CBDD442003DE31D /* GTMOAuth2View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = GTMOAuth2View;
+			sourceTree = "<group>";
+		};
 		D07500071CBC990800B07E2C /* YouTubeAPIProtocols */ = {
 			isa = PBXGroup;
 			children = (
@@ -95,6 +112,7 @@
 				D07500181CBC990E00B07E2C /* GoogleAPI */,
 				D07500071CBC990800B07E2C /* YouTubeAPIProtocols */,
 				D075FFF01CBC974600B07E2C /* YouTubeUploaderFramework */,
+				D06C97721CBDD442003DE31D /* GTMOAuth2View */,
 				D075FFEF1CBC974600B07E2C /* Products */,
 			);
 			sourceTree = "<group>";
@@ -103,6 +121,7 @@
 			isa = PBXGroup;
 			children = (
 				D075FFEE1CBC974600B07E2C /* YouTubeUploaderFramework.framework */,
+				D06C97711CBDD442003DE31D /* GTMOAuth2View.bundle */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -141,6 +160,7 @@
 		D08EC5A71CBCA421005BE696 /* Touch */ = {
 			isa = PBXGroup;
 			children = (
+				D06C976A1CBDD19C003DE31D /* GTMOAuth2ViewTouch.xib */,
 			);
 			name = Touch;
 			sourceTree = "<group>";
@@ -165,6 +185,23 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
+		D06C97701CBDD442003DE31D /* GTMOAuth2View */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D06C97741CBDD442003DE31D /* Build configuration list for PBXNativeTarget "GTMOAuth2View" */;
+			buildPhases = (
+				D06C976D1CBDD442003DE31D /* Sources */,
+				D06C976E1CBDD442003DE31D /* Frameworks */,
+				D06C976F1CBDD442003DE31D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GTMOAuth2View;
+			productName = GTMOAuth2View;
+			productReference = D06C97711CBDD442003DE31D /* GTMOAuth2View.bundle */;
+			productType = "com.apple.product-type.bundle";
+		};
 		D075FFED1CBC974600B07E2C /* YouTubeUploaderFramework */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = D075FFF61CBC974600B07E2C /* Build configuration list for PBXNativeTarget "YouTubeUploaderFramework" */;
@@ -192,6 +229,9 @@
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = tbago;
 				TargetAttributes = {
+					D06C97701CBDD442003DE31D = {
+						CreatedOnToolsVersion = 7.3;
+					};
 					D075FFED1CBC974600B07E2C = {
 						CreatedOnToolsVersion = 7.3;
 					};
@@ -210,11 +250,20 @@
 			projectRoot = "";
 			targets = (
 				D075FFED1CBC974600B07E2C /* YouTubeUploaderFramework */,
+				D06C97701CBDD442003DE31D /* GTMOAuth2View */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		D06C976F1CBDD442003DE31D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D06C97771CBDD449003DE31D /* GTMOAuth2ViewTouch.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D075FFEC1CBC974600B07E2C /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -225,6 +274,13 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		D06C976D1CBDD442003DE31D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		D075FFE91CBC974600B07E2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -244,6 +300,44 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		D06C97751CBDD442003DE31D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tbago.GTMOAuth2View;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.3;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "arm64 armv7s armv7";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
+		D06C97761CBDD442003DE31D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "-";
+				INFOPLIST_EXPAND_BUILD_SETTINGS = NO;
+				INFOPLIST_FILE = "";
+				INFOPLIST_OUTPUT_FORMAT = binary;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Bundles";
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tbago.GTMOAuth2View;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos9.3;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				VALID_ARCHS = "arm64 armv7s armv7";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
 		D075FFF41CBC974600B07E2C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -387,6 +481,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		D06C97741CBDD442003DE31D /* Build configuration list for PBXNativeTarget "GTMOAuth2View" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D06C97751CBDD442003DE31D /* Debug */,
+				D06C97761CBDD442003DE31D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		D075FFE81CBC974600B07E2C /* Build configuration list for PBXProject "YouTubeUploaderFramework" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
