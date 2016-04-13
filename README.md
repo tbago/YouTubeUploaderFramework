@@ -35,3 +35,5 @@ The framework also contain process block, so you can get update precent value.
 ```
 ## How to use
 Because the Google API contain oauth xib file. So I create the bundle target(GTMOAuth2View).Before you compile the demo project.You need drag the GTMOAuth2View.bundle to the project directory.
+
+For the upload media file,I use the FCA.mp4 demo file.So the demo porject cannot compile until you drag the media file and bundle file to the project directory.
