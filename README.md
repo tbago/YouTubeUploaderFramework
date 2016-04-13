@@ -3,7 +3,7 @@ Based on [yt-direct-lite-ios](https://github.com/youtube/yt-direct-lite-iOS).
 The sample code is hard to use.So I create union framework to support update video to youtube.
 The framework also contain process block, so you can get update precent value.
 
-# API Call
+## API Call
 ```objective-c
 ///< check authorized
     if (![self.youtubeUploader isAuthorized]) {
@@ -33,3 +33,5 @@ The framework also contain process block, so you can get update precent value.
                                         }
                                     }];
 ```
+## How to use
+Because the Google API contain oauth xib file. So I create the bundle target(GTMOAuth2View).Before you compile the demo project.You need drag the GTMOAuth2View.bundle to the project directory.
