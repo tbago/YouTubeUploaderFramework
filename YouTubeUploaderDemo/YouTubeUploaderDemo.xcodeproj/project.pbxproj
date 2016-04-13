@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D0534D1C1CBDDCDC00A8EB07 /* GTMOAuth2View.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0534D1B1CBDDCDC00A8EB07 /* GTMOAuth2View.bundle */; };
 		D06C97941CBDD9CB003DE31D /* YouTubeUploaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06C97911CBDD9AF003DE31D /* YouTubeUploaderFramework.framework */; };
 		D08EC5B41CBCCC44005BE696 /* FCA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D08EC5B31CBCCC35005BE696 /* FCA.mp4 */; };
 		D090079E1CBC9710000A5A10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D090079D1CBC9710000A5A10 /* main.m */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D0534D1B1CBDDCDC00A8EB07 /* GTMOAuth2View.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GTMOAuth2View.bundle; sourceTree = "<group>"; };
 		D06C978B1CBDD9AE003DE31D /* YouTubeUploaderFramework.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouTubeUploaderFramework.xcodeproj; path = ../YouTubeUploaderFramework/YouTubeUploaderFramework.xcodeproj; sourceTree = "<group>"; };
 		D08EC5B31CBCCC35005BE696 /* FCA.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = FCA.mp4; sourceTree = "<group>"; };
 		D09007991CBC9710000A5A10 /* YouTubeUploaderDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = YouTubeUploaderDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -90,6 +92,7 @@
 		D090079B1CBC9710000A5A10 /* YouTubeUploaderDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D0534D1B1CBDDCDC00A8EB07 /* GTMOAuth2View.bundle */,
 				D090079F1CBC9710000A5A10 /* AppDelegate.h */,
 				D09007A01CBC9710000A5A10 /* AppDelegate.m */,
 				D09007A21CBC9710000A5A10 /* ViewController.h */,
@@ -192,6 +195,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D0534D1C1CBDDCDC00A8EB07 /* GTMOAuth2View.bundle in Resources */,
 				D08EC5B41CBCCC44005BE696 /* FCA.mp4 in Resources */,
 				D09007AC1CBC9710000A5A10 /* LaunchScreen.storyboard in Resources */,
 				D09007A91CBC9710000A5A10 /* Assets.xcassets in Resources */,
