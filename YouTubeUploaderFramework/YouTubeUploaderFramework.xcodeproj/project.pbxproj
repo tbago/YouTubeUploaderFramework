@@ -446,6 +446,7 @@
 				);
 				INFOPLIST_FILE = YouTubeUploaderFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbago.YouTubeUploaderFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -471,6 +472,7 @@
 				);
 				INFOPLIST_FILE = YouTubeUploaderFramework/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.tbago.YouTubeUploaderFramework;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -488,6 +490,7 @@
 				D06C97761CBDD442003DE31D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D075FFE81CBC974600B07E2C /* Build configuration list for PBXProject "YouTubeUploaderFramework" */ = {
 			isa = XCConfigurationList;
