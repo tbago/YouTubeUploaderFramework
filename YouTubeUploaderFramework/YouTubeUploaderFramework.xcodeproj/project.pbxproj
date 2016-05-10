@@ -189,7 +189,6 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D06C97741CBDD442003DE31D /* Build configuration list for PBXNativeTarget "GTMOAuth2View" */;
 			buildPhases = (
-				D06C976D1CBDD442003DE31D /* Sources */,
 				D06C976E1CBDD442003DE31D /* Frameworks */,
 				D06C976F1CBDD442003DE31D /* Resources */,
 			);
@@ -274,13 +273,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		D06C976D1CBDD442003DE31D /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		D075FFE91CBC974600B07E2C /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -437,6 +429,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					./GoogleAPI,
 					./GoogleAPI/YouTube,
@@ -464,6 +457,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_BITCODE = NO;
 				HEADER_SEARCH_PATHS = (
 					./GoogleAPI,
 					./GoogleAPI/YouTube,
