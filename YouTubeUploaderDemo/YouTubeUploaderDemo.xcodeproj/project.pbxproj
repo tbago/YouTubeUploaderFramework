@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D0424D581CBE0F6800AC3F18 /* YouTubeUploaderFramework.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D06C97911CBDD9AF003DE31D /* YouTubeUploaderFramework.framework */; };
 		D0534D1C1CBDDCDC00A8EB07 /* GTMOAuth2View.bundle in Resources */ = {isa = PBXBuildFile; fileRef = D0534D1B1CBDDCDC00A8EB07 /* GTMOAuth2View.bundle */; };
+		D07544721D791E09007D436B /* YouTubeUploaderFramework.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D06C97911CBDD9AF003DE31D /* YouTubeUploaderFramework.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D08EC5B41CBCCC44005BE696 /* FCA.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = D08EC5B31CBCCC35005BE696 /* FCA.mp4 */; };
 		D090079E1CBC9710000A5A10 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = D090079D1CBC9710000A5A10 /* main.m */; };
 		D09007A11CBC9710000A5A10 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = D09007A01CBC9710000A5A10 /* AppDelegate.m */; };
@@ -33,7 +34,28 @@
 			remoteGlobalIDString = D06C97711CBDD442003DE31D;
 			remoteInfo = GTMOAuth2View;
 		};
+		D07544731D791E09007D436B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D06C978B1CBDD9AE003DE31D /* YouTubeUploaderFramework.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D075FFED1CBC974600B07E2C;
+			remoteInfo = YouTubeUploaderFramework;
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D07544751D791E09007D436B /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D07544721D791E09007D436B /* YouTubeUploaderFramework.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		D0534D1B1CBDDCDC00A8EB07 /* GTMOAuth2View.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = GTMOAuth2View.bundle; sourceTree = "<group>"; };
@@ -125,10 +147,12 @@
 				D09007951CBC9710000A5A10 /* Sources */,
 				D09007961CBC9710000A5A10 /* Frameworks */,
 				D09007971CBC9710000A5A10 /* Resources */,
+				D07544751D791E09007D436B /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D07544741D791E09007D436B /* PBXTargetDependency */,
 			);
 			name = YouTubeUploaderDemo;
 			productName = YouTubeUploaderDemo;
@@ -217,6 +241,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D07544741D791E09007D436B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouTubeUploaderFramework;
+			targetProxy = D07544731D791E09007D436B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		D09007A51CBC9710000A5A10 /* Main.storyboard */ = {
@@ -326,7 +358,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
@@ -352,7 +384,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ENABLE_BITCODE = YES;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",

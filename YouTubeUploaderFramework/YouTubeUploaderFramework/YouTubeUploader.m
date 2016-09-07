@@ -13,6 +13,9 @@
 #import "Utils.h"
 #import "UploadController.h"
 
+NSString * const kYouTubeAuthDataKey = @"YouTubeAuthDateKeyGhWcJ";
+static NSInteger kTimeOutValue = 60*60*24*7;        ///< seven day time out
+
 typedef void (^UploadVideoComplate)(BOOL success, NSString *message);
 
 @interface YouTubeUploader()
@@ -44,7 +47,23 @@ typedef void (^UploadVideoComplate)(BOOL success, NSString *message);
 #pragma mark - public method
 
 - (BOOL)isAuthorized {
-    return [((GTMOAuth2Authentication *)self.youtubeService.authorizer) canAuthorize];
+    GTMOAuth2Authentication *authentication = self.youtubeService.authorizer;
+    BOOL alreadyAuthorized = [authentication canAuthorize];
+    if (alreadyAuthorized) {        ///< not expiration date
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        if ([defaults objectForKey:kYouTubeAuthDataKey] == nil) {
+            alreadyAuthorized = NO;
+        }
+        else {
+            NSDate *authorDate = [defaults objectForKey:kYouTubeAuthDataKey];
+            NSTimeInterval timeInterval = [authorDate timeIntervalSinceNow];
+            timeInterval *= -1;
+            if (timeInterval > kTimeOutValue) {
+                alreadyAuthorized = NO;
+            }
+        }
+    }
+    return alreadyAuthorized;
 }
 
 - (UIViewController *)createAuthViewController {
@@ -116,6 +135,11 @@ typedef void (^UploadVideoComplate)(BOOL success, NSString *message);
 //        [Utils showAlert:@"Authentication Error" message:error.localizedDescription];
         self.youtubeService.authorizer = nil;
     } else {
+        ///< login auth date
+        NSUserDefaults *defaults = [NSUserDefaults standardUserDefaults];
+        [defaults setObject:[NSDate date] forKey:kYouTubeAuthDataKey];
+        [defaults synchronize];
+        
         self.youtubeService.authorizer = authResult;
     }
 }
